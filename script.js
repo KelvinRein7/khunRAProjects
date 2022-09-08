@@ -18,19 +18,6 @@ var main = function (input) {
   }
   return outPut;
 };
-//tie
-/*
-  if (tieFunction(playerInput, computerSide)) {
-    return `It is tied! <br> You both chose ${playerInput} ${playerEmoji}.`;
-  }
-
-  //win or lose
-  if (winFunction(playerInput, computerSide)) {
-    return `You won! <br> You chose ${playerInput} ${playerIcon} while the computer chose ${computerIcon} ${computerIcon}.`;
-  } else {
-    return `You lost! <br> You chose ${playerInput} ${playerIcon} while the computer chose ${computerSide} ${computerIcon}.`;
-  }
-  */
 
 var SCISSORS = "scissors";
 var PAPER = "paper";
@@ -61,10 +48,7 @@ var winFunction = function (playerInput, randomForComputer) {
   return (
     (playerInput == SCISSORS && randomForComputer == PAPER) ||
     (playerInput == PAPER && randomForComputer == ROCK) ||
-    (playerInput == ROCK && randomForComputer == SCISSORS) ||
-    (playerInput == reversePAPER && randomForComputer == SCISSORS) ||
-    (playerInput == reverseROCK && randomForComputer == PAPER) ||
-    (playerInput == reverseSCISSORS && randomForComputer == ROCK)
+    (playerInput == ROCK && randomForComputer == SCISSORS) 
   );
 };
 
