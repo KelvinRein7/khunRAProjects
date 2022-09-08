@@ -1,2 +1,1 @@
-#rocket_academy_project_1
-#KTR
+#rocket_academy_project01
